@@ -1,0 +1,14 @@
+[[language]]
+code  = "global"
+label = "Global"
+flag  = "🌐"
+
+[[language]]
+code  = "en"
+label = "EN"
+flag  = "🇬🇧"
+
+[[language]]
+code  = "de"
+label = "DE"
+flag  = "🇩🇪"

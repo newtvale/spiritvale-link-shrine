@@ -1,0 +1,39 @@
+[[filter]]
+tag   = "builds"
+label = "Builds"
+nav   = true
+
+[[filter]]
+tag   = "simulator"
+label = "Simulator"
+nav   = true
+
+[[filter]]
+tag   = "database"
+label = "Database"
+nav   = true
+
+[[filter]]
+tag   = "maps"
+label = "Maps"
+nav   = true
+
+[[filter]]
+tag   = "market"
+label = "Market"
+nav   = true
+
+[[filter]]
+tag   = "news"
+label = "News"
+nav   = true
+
+[[filter]]
+tag   = "social"
+label = "Social"
+nav   = true
+
+[[filter]]
+tag   = "wiki"
+label = "Wiki"
+nav   = true

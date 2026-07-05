@@ -1,0 +1,171 @@
+[[link]]
+title  = "SpiritVale Discord"
+url    = "https://discord.gg/SpiritVale"
+origin = "official"
+lang   = ["global"]
+tags   = ["news", "social"]
+desc   = "the official discord server"
+
+[[link]]
+title  = "SpiritVale on Facebook"
+url    = "https://www.facebook.com/SpiritValeGame/"
+origin = "official"
+lang   = ["en"]
+tags   = ["news", "social"]
+desc   = "the official facebook page"
+
+[[link]]
+title  = "SpiritVale on Reddit"
+url    = "https://www.reddit.com/r/SpiritVale/"
+origin = "official"
+lang   = ["en"]
+tags   = ["news", "social"]
+desc   = "the official subreddit"
+
+[[link]]
+title  = "SpiritVale on X"
+url    = "https://x.com/SpiritValeGame"
+origin = "official"
+lang   = ["en"]
+tags   = ["news", "social"]
+desc   = "the official twitter account"
+
+[[link]]
+title  = "SpiritVale on YouTube"
+url    = "https://www.youtube.com/@spiritvale"
+origin = "official"
+lang   = ["en"]
+tags   = ["news", "social"]
+desc   = "the official youtube channel"
+
+[[link]]
+title  = "SpiritVale.info"
+url    = "https://spiritvale.info"
+origin = "official"
+lang   = ["en"]
+tags   = ["builds", "database", "maps", "market", "news", "wiki"]
+desc   = "officially-endorsed community site"
+author = "RandomGuy"
+
+[[link]]
+title  = "SpiritVale Wiki"
+url    = "https://spiritvalewiki.com"
+origin       = "community"
+endorsements = 1
+lang         = ["en"]
+tags         = ["builds", "database", "maps"]
+desc         = "a community database"
+author       = "ezgame"
+
+[[link]]
+title  = "SpiritVale Game Wiki"
+url    = "https://i4ton.github.io/SpiritVale.github.io"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["database"]
+desc         = "a community database"
+author       = "i4ton"
+github       = "https://github.com/i4Ton/SpiritVale.github.io"
+
+[[link]]
+title  = "SVCards"
+url    = "https://spiritvale.de"
+origin       = "community"
+endorsements = 0
+lang         = ["de"]
+tags         = ["maps", "news", "social"]
+desc         = "a german community site"
+author       = "Ciclon"
+
+[[link]]
+title  = "SpiritVale Codex"
+url    = "https://spiritvale-codex.vercel.app/"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["builds"]
+desc         = "archive of loot & legends"
+author       = "K75"
+
+[[link]]
+title  = "SpiritVale Companion"
+url    = "https://spiritvale-companion.com/"
+origin       = "community"
+endorsements = 1
+lang         = ["en"]
+tags         = ["builds", "database", "maps"]
+desc         = "one-stop shop for planning characters and builds"
+author       = "Maniks"
+
+[[link]]
+title  = "Spiritvalers"
+url    = "https://www.spiritvalers.com/"
+origin       = "community"
+endorsements = 1
+lang         = ["en"]
+tags         = ["builds", "database", "maps"]
+desc         = "community database with tools for players"
+author       = "Buhhhryan"
+
+[[link]]
+title  = "SpiritVale Builder"
+url    = "https://spirit-vale-builder.base44.app/"
+origin       = "community"
+endorsements = 3
+lang         = ["en"]
+tags         = ["builds", "database", "maps", "simulator"]
+desc         = "create and share character builds"
+author       = "Ogoshi"
+
+[[link]]
+title  = "SpiritVale Map"
+url    = "https://spiritvale-map.pages.dev/"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["maps"]
+desc         = "interactive zone map explorer"
+author       = "Auto"
+
+[[link]]
+title  = "SpiritVale Probability Calculator"
+url    = "https://lani27.github.io/Spiritvale-probability-calculator/"
+origin       = "community"
+endorsements = 1
+lang         = ["en"]
+tags         = ["simulator"]
+desc         = "calculate probability of rolling specific stats on gear"
+author       = "Lani27"
+
+[[link]]
+title  = "Interactive World Map"
+url    = "https://bysmuto.github.io/SpiritVale-map/"
+origin       = "community"
+endorsements = 1
+lang         = ["en"]
+tags         = ["maps"]
+desc         = "zone map with boss spawns, waypoints, and elemental data"
+author       = "Bysmuto"
+github       = "https://github.com/bysmuto/SpiritVale-map"
+
+[[link]]
+title  = "Patch Notes"
+url    = "https://spiritvale.tama.sh"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["news"]
+desc         = "unofficial patch notes hosted as JSON - useful if you're building something"
+author       = "Tam4shii"
+github       = "https://github.com/Tam4shii/spiritvale-site"
+
+[[link]]
+title  = "SpiritVale Market"
+url    = "https://spiritvalemarket.com/"
+origin       = "community"
+endorsements = 1
+lang         = ["en"]
+tags         = ["database", "maps", "market"]
+desc         = "trading board, item/monster database, world map, and boss kill leaderboard"
+author       = "LessFluff"
