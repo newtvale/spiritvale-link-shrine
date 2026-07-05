@@ -368,7 +368,7 @@ main {
   text-align: center;
 }
 
-.footer-disclaimer {
+.footer-legend {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.48rem;
   color: var(--tan-muted);
@@ -401,7 +401,7 @@ main {
     padding: 0.5rem 0.75rem;
   }
 
-  .footer-disclaimer {
+  .footer-legend {
     font-size: 0.44rem;
   }
 }
