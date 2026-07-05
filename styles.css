@@ -368,12 +368,13 @@ main {
   text-align: center;
 }
 
-.footer-legend {
+.link-legend {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.48rem;
   color: var(--tan-muted);
   line-height: 2.1;
-  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  text-align: center;
 }
 
 .footer-credits {
@@ -401,7 +402,7 @@ main {
     padding: 0.5rem 0.75rem;
   }
 
-  .footer-legend {
+  .link-legend {
     font-size: 0.44rem;
   }
 }
