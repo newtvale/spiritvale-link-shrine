@@ -75,14 +75,17 @@ import { parse } from 'https://esm.sh/smol-toml';
       li.appendChild(el('span', { class: 'link-author' }, 'by ' + link.author));
     }
 
+    var badgeGroup = el('span', { class: 'badge-group' });
     tags.forEach(function (tag) {
       var label = (tagLabels && tagLabels[tag]) || tag;
-      li.appendChild(makeBadge(tag, label, null));
+      badgeGroup.appendChild(makeBadge(tag, label, null));
     });
 
     if (link.github) {
-      li.appendChild(makeBadge('github', 'GitHub', link.github));
+      badgeGroup.appendChild(makeBadge('github', 'GitHub', link.github));
     }
+
+    if (badgeGroup.childNodes.length > 0) li.appendChild(badgeGroup);
 
     if (link.desc) {
       li.appendChild(el('span', { class: 'link-desc' }, link.desc));
