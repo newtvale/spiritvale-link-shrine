@@ -111,7 +111,7 @@ a:focus-visible {
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-  padding: 0.6rem 0 1.75rem;
+  padding: 0.6rem 0 0.75rem;
 }
 
 .filter-btn {
@@ -152,8 +152,8 @@ a:focus-visible {
   flex-wrap: wrap;
   gap: 0.3rem;
   justify-content: center;
-  padding: 0 0 1rem;
-  margin-top: -1rem;
+  padding: 0 0 0.75rem;
+  margin-top: 0;
 }
 
 .lang-btn {
@@ -176,6 +176,41 @@ a:focus-visible {
 }
 
 .lang-btn.lang-active {
+  opacity: 1;
+  background: rgba(22, 124, 130, 0.15);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.bar-divider {
+  display: inline-block;
+  width: 1px;
+  align-self: stretch;
+  background: rgba(170, 162, 142, 0.3);
+  margin: 0 0.5rem;
+}
+
+/* origin filter buttons (live in .lang-bar) */
+.origin-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.42rem;
+  color: var(--tan-muted);
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(170, 162, 142, 0.35);
+  border-radius: 3px;
+  background: transparent;
+  opacity: 0.6;
+  transition: opacity 0.15s, background 0.15s, color 0.15s;
+  letter-spacing: 0.05em;
+}
+
+.origin-btn:hover {
+  opacity: 1;
+  color: var(--cyan);
+}
+
+.origin-btn.origin-active {
   opacity: 1;
   background: rgba(22, 124, 130, 0.15);
   border-color: var(--teal);

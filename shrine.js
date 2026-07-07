@@ -7,6 +7,7 @@ import { parse } from 'https://esm.sh/smol-toml';
   var activeFeature = 'all';
   var activeLangs = ['en', 'global'];
   var activeSort = 'default';
+  var activeOrigin = ['official', 'community'];
   var maxVisibleStars = 3;
   var officialLinkWeight = 1000;
   var endorsementWeight = 10;
@@ -43,7 +44,8 @@ import { parse } from 'https://esm.sh/smol-toml';
     var li = el('li', {
       class: 'link-row',
       'data-tags': tags.join(' '),
-      'data-lang': langs.join(' ')
+      'data-lang': langs.join(' '),
+      'data-origin': link.origin || 'community'
     });
 
     li.appendChild(el('a', {
@@ -113,7 +115,8 @@ import { parse } from 'https://esm.sh/smol-toml';
       var langOk = activeLangs.length === 0 ||
         langs.split(' ').some(function (l) { return activeLangs.indexOf(l) !== -1; });
 
-      var isVisible = featureOk && langOk;
+      var originOk = activeOrigin.length === 0 || activeOrigin.indexOf(row.getAttribute('data-origin') || 'community') !== -1;
+      var isVisible = featureOk && langOk && originOk;
       row.classList.toggle('hidden', !isVisible);
       if (isVisible) lastVisible = row;
     }
@@ -165,9 +168,9 @@ import { parse } from 'https://esm.sh/smol-toml';
       nav.appendChild(btn);
     });
 
-    if (data.languages && data.languages.length) {
-      var langBar = el('div', { class: 'lang-bar' });
+    var langBar = el('div', { class: 'lang-bar' });
 
+    if (data.languages && data.languages.length) {
       data.languages.forEach(function (lang) {
         var btn = el('button', {
           class: 'lang-btn' + (activeLangs.indexOf(lang.code) !== -1 ? ' lang-active' : ''),
@@ -187,8 +190,26 @@ import { parse } from 'https://esm.sh/smol-toml';
         langBar.appendChild(btn);
       });
 
-      nav.parentNode.insertBefore(langBar, nav.nextSibling);
+      langBar.appendChild(el('span', { class: 'bar-divider' }));
     }
+
+    [['official', 'Official'], ['community', 'Community']].forEach(function (opt) {
+      var btn = el('button', { class: 'origin-btn origin-active', 'data-origin': opt[0] }, opt[1]);
+      btn.addEventListener('click', function () {
+        var idx = activeOrigin.indexOf(opt[0]);
+        if (idx === -1) {
+          activeOrigin.push(opt[0]);
+          btn.classList.add('origin-active');
+        } else {
+          activeOrigin.splice(idx, 1);
+          btn.classList.remove('origin-active');
+        }
+        applyFilters();
+      });
+      langBar.appendChild(btn);
+    });
+
+    nav.parentNode.insertBefore(langBar, nav.nextSibling);
 
     function getSortedLinks() {
       if (activeSort === 'alpha') {
