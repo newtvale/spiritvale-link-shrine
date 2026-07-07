@@ -400,6 +400,17 @@ a.badge:hover {
   line-height: 1.55;
 }
 
+.shrine-empty {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+.shrine-empty.hidden { display: none; }
+
 /* footer */
 main {
   flex: 1;

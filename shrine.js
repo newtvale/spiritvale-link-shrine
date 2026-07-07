@@ -121,6 +121,13 @@ import { parse } from 'https://esm.sh/smol-toml';
       if (isVisible) lastVisible = row;
     }
     if (lastVisible) lastVisible.classList.add('visible-last');
+
+    var emptyMsg = document.querySelector('.shrine-empty');
+    if (!emptyMsg) {
+      emptyMsg = el('div', { class: 'shrine-empty' }, 'No links match your current filters.');
+      grid.appendChild(emptyMsg);
+    }
+    emptyMsg.classList.toggle('hidden', lastVisible !== null);
   }
 
   function buildList(data) {
