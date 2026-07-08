@@ -5,6 +5,7 @@ origin = "official"
 lang   = ["global"]
 tags   = ["news", "social"]
 desc   = "the official discord server"
+created = "2024-11-24"
 
 [[link]]
 title  = "SpiritVale on Facebook"
@@ -13,6 +14,7 @@ origin = "official"
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official facebook page"
+created = "2026-05-16"
 
 [[link]]
 title  = "SpiritVale on Reddit"
@@ -21,6 +23,7 @@ origin = "official"
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official subreddit"
+created = "2025-07-18"
 
 [[link]]
 title  = "SpiritVale on X"
@@ -29,6 +32,7 @@ origin = "official"
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official twitter account"
+created = "2025-12-22"
 
 [[link]]
 title  = "SpiritVale on YouTube"
@@ -37,6 +41,7 @@ origin = "official"
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official youtube channel"
+created = "2025-07-18"
 
 [[link]]
 title  = "SpiritVale.info"
@@ -46,6 +51,7 @@ lang   = ["en"]
 tags   = ["builds", "database", "maps", "market", "news", "wiki"]
 desc   = "officially-endorsed community site"
 author = "RandomGuy"
+created = "2025-08-06"
 
 [[link]]
 title  = "SpiritVale Wiki"
@@ -56,6 +62,7 @@ lang         = ["en"]
 tags         = ["builds", "database", "maps"]
 desc         = "a community database"
 author       = "ezgame"
+created = "2026-06-15"
 
 [[link]]
 title  = "SpiritVale Game Wiki"
@@ -67,6 +74,7 @@ tags         = ["database"]
 desc         = "a community database"
 author       = "i4ton"
 github       = "https://github.com/i4Ton/SpiritVale.github.io"
+created = "2026-06-07"
 
 [[link]]
 title  = "SVCards"
@@ -77,6 +85,7 @@ lang         = ["de"]
 tags         = ["maps", "news", "social"]
 desc         = "a german community site"
 author       = "Ciclon"
+created = "2026-06-06"
 
 [[link]]
 title  = "SpiritVale Codex"
@@ -87,6 +96,7 @@ lang         = ["en"]
 tags         = ["builds"]
 desc         = "archive of loot & legends"
 author       = "K75"
+created = "2026-01-08"
 
 [[link]]
 title  = "SpiritVale Companion"
@@ -97,6 +107,7 @@ lang         = ["en"]
 tags         = ["builds", "database", "maps"]
 desc         = "one-stop shop for planning characters and builds"
 author       = "Maniks"
+created = "2026-04-22"
 
 [[link]]
 title  = "Spiritvalers"
@@ -107,6 +118,7 @@ lang         = ["en"]
 tags         = ["builds", "database", "maps"]
 desc         = "community database with tools for players"
 author       = "Buhhhryan"
+created = "2026-07-03"
 
 [[link]]
 title  = "SpiritVale Builder"
@@ -117,6 +129,7 @@ lang         = ["en"]
 tags         = ["builds", "database", "maps", "simulator"]
 desc         = "create and share character builds"
 author       = "Ogoshi"
+created = "2025-12-22"
 
 [[link]]
 title  = "SpiritVale Map"
@@ -127,6 +140,7 @@ lang         = ["en"]
 tags         = ["maps"]
 desc         = "interactive zone map explorer"
 author       = "Auto"
+created = "2025-12-01"
 
 [[link]]
 title  = "SpiritVale Probability Calculator"
@@ -137,6 +151,8 @@ lang         = ["en"]
 tags         = ["simulator"]
 desc         = "calculate probability of rolling specific stats on gear"
 author       = "Lani27"
+github       = "https://github.com/Lani27/Spiritvale-probability-calculator"
+created = "2025-09-24"
 
 [[link]]
 title  = "Interactive World Map"
@@ -148,6 +164,7 @@ tags         = ["maps"]
 desc         = "zone map with boss spawns, waypoints, and elemental data"
 author       = "Bysmuto"
 github       = "https://github.com/bysmuto/SpiritVale-map"
+created = "2026-06-16"
 
 [[link]]
 title  = "Patch Notes"
@@ -159,6 +176,7 @@ tags         = ["news"]
 desc         = "unofficial patch notes hosted as JSON - useful if you're building something"
 author       = "Tam4shii"
 github       = "https://github.com/Tam4shii/spiritvale-site"
+created = "2026-05-25"
 
 [[link]]
 title  = "SpiritVale Market"
@@ -169,3 +187,4 @@ lang         = ["en"]
 tags         = ["database", "maps", "market"]
 desc         = "trading board, item/monster database, world map, and boss kill leaderboard"
 author       = "LessFluff"
+created = "2026-05-28"

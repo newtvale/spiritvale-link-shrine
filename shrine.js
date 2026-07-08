@@ -222,6 +222,18 @@ import { parse } from 'https://esm.sh/smol-toml';
       if (activeSort === 'alpha') {
         return allLinks.slice().sort(function (a, b) { return a.title.localeCompare(b.title); });
       }
+      if (activeSort === 'newest') {
+        return allLinks.slice().sort(function (a, b) {
+          var da = a.created || '9999-99-99', db = b.created || '9999-99-99';
+          return da === db ? 0 : da < db ? 1 : -1;
+        });
+      }
+      if (activeSort === 'oldest') {
+        return allLinks.slice().sort(function (a, b) {
+          var da = a.created || '9999-99-99', db = b.created || '9999-99-99';
+          return da === db ? 0 : da > db ? 1 : -1;
+        });
+      }
       if (activeSort === 'random') {
         var arr = allLinks.slice();
         for (var i = arr.length - 1; i > 0; i--) {
@@ -247,7 +259,7 @@ import { parse } from 'https://esm.sh/smol-toml';
     var sortBar = el('div', { class: 'sort-bar' });
     var sortLabel = el('label', { class: 'sort-label', 'for': 'shrine-sort' }, 'sort:');
     var sortSelect = el('select', { class: 'sort-select', id: 'shrine-sort' });
-    [['default', 'Default'], ['alpha', 'A–Z'], ['random', 'Random']].forEach(function (opt) {
+    [['default', 'Default'], ['alpha', 'A–Z'], ['newest', 'Newest'], ['oldest', 'Oldest'], ['random', 'Random']].forEach(function (opt) {
       sortSelect.appendChild(el('option', { value: opt[0] }, opt[1]));
     });
     sortSelect.addEventListener('change', function () {
