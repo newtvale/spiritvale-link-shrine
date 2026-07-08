@@ -7,6 +7,7 @@ lang   = ["global"]
 tags   = ["news", "social"]
 desc   = "the official discord server"
 created = "2024-11-24"
+added   = "2026-07-05"
 
 [[link]]
 title        = "SpiritVale on Facebook"
@@ -17,6 +18,7 @@ lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official facebook page"
 created = "2026-05-16"
+added   = "2026-07-05"
 
 [[link]]
 title        = "SpiritVale on Reddit"
@@ -27,6 +29,7 @@ lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official subreddit"
 created = "2025-07-18"
+added   = "2026-07-05"
 
 [[link]]
 title        = "SpiritVale on X"
@@ -37,6 +40,7 @@ lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official twitter account"
 created = "2025-12-22"
+added   = "2026-07-05"
 
 [[link]]
 title        = "SpiritVale on YouTube"
@@ -47,6 +51,7 @@ lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official youtube channel"
 created = "2025-07-18"
+added   = "2026-07-05"
 
 [[link]]
 title        = "SpiritVale on Instagram"
@@ -57,6 +62,7 @@ lang         = ["en"]
 tags         = ["news", "social"]
 desc         = "the official instagram account"
 created = "2025-07-18"
+added        = "2026-07-07"
 
 [[link]]
 title        = "SpiritVale on Bluesky"
@@ -67,6 +73,7 @@ lang         = ["en"]
 tags         = ["news", "social"]
 desc         = "the official bluesky account"
 created = "2025-07-18"
+added        = "2026-07-07"
 
 [[link]]
 title        = "SpiritVale on TikTok"
@@ -77,6 +84,7 @@ lang         = ["en"]
 tags         = ["news", "social"]
 desc         = "the official tiktok account"
 created = "2025-07-18"
+added        = "2026-07-07"
 
 [[link]]
 title        = "SpiritVale.info"
@@ -88,6 +96,7 @@ tags   = ["builds", "database", "maps", "market", "news", "wiki"]
 desc   = "officially-endorsed community site"
 author = "RandomGuy"
 created = "2025-08-06"
+added  = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Wiki"
@@ -99,6 +108,7 @@ tags         = ["builds", "database", "maps"]
 desc         = "a community database"
 author       = "ezgame"
 created = "2026-06-15"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Game Wiki"
@@ -111,6 +121,7 @@ desc         = "a community database"
 author       = "i4ton"
 github       = "https://github.com/i4Ton/SpiritVale.github.io"
 created = "2026-06-07"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SVCards"
@@ -122,6 +133,7 @@ tags         = ["maps", "news", "social"]
 desc         = "a german community site"
 author       = "Ciclon"
 created = "2026-06-06"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Codex"
@@ -133,6 +145,7 @@ tags         = ["builds"]
 desc         = "archive of loot & legends"
 author       = "K75"
 created = "2026-01-08"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Companion"
@@ -144,6 +157,7 @@ tags         = ["builds", "database", "maps"]
 desc         = "one-stop shop for planning characters and builds"
 author       = "Maniks"
 created = "2026-04-22"
+added        = "2026-07-05"
 
 [[link]]
 title  = "Spiritvalers"
@@ -155,6 +169,7 @@ tags         = ["builds", "database", "maps"]
 desc         = "community database with tools for players"
 author       = "Buhhhryan"
 created = "2026-07-03"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Builder"
@@ -166,6 +181,7 @@ tags         = ["builds", "database", "maps", "simulator"]
 desc         = "create and share character builds"
 author       = "Ogoshi"
 created = "2025-12-22"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Map"
@@ -177,6 +193,7 @@ tags         = ["maps"]
 desc         = "interactive zone map explorer"
 author       = "Auto"
 created = "2025-12-01"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Probability Calculator"
@@ -189,6 +206,7 @@ desc         = "calculate probability of rolling specific stats on gear"
 author       = "Lani27"
 github       = "https://github.com/Lani27/Spiritvale-probability-calculator"
 created = "2025-09-24"
+added        = "2026-07-05"
 
 [[link]]
 title  = "Interactive World Map"
@@ -201,6 +219,7 @@ desc         = "zone map with boss spawns, waypoints, and elemental data"
 author       = "Bysmuto"
 github       = "https://github.com/bysmuto/SpiritVale-map"
 created = "2026-06-16"
+added        = "2026-07-05"
 
 [[link]]
 title  = "Patch Notes"
@@ -213,6 +232,7 @@ desc         = "unofficial patch notes hosted as JSON - useful if you're buildin
 author       = "Tam4shii"
 github       = "https://github.com/Tam4shii/spiritvale-site"
 created = "2026-05-25"
+added        = "2026-07-05"
 
 [[link]]
 title  = "SpiritVale Market"
@@ -224,3 +244,17 @@ tags         = ["database", "maps", "market"]
 desc         = "trading board, item/monster database, world map, and boss kill leaderboard"
 author       = "LessFluff"
 created = "2026-05-28"
+added        = "2026-07-05"
+
+[[link]]
+title        = "Spirit Vale Atlas"
+url          = "https://zeider.github.io/spirit-vale-map/"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["builds", "maps"]
+desc         = "interactive map with leveling route planner, build planner, gear stages, and community gallery"
+author       = "Zeider"
+github       = "https://github.com/Zeider/spirit-vale-map"
+created      = "2026-06-11"
+added        = "2026-07-07"
