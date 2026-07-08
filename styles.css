@@ -246,6 +246,11 @@ a:focus-visible {
   -webkit-appearance: none;
 }
 
+.sort-select option {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.7rem;
+}
+
 .sort-select:hover,
 .sort-select:focus {
   outline: none;
