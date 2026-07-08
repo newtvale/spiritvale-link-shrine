@@ -112,10 +112,10 @@ import { parse } from 'https://esm.sh/smol-toml';
       var featureOk = activeFeature === 'all' ||
         tags.split(' ').indexOf(activeFeature) !== -1;
 
-      var langOk = activeLangs.length === 0 ||
+      var langOk = activeLangs.length > 0 &&
         langs.split(' ').some(function (l) { return activeLangs.indexOf(l) !== -1; });
 
-      var originOk = activeOrigin.length === 0 || activeOrigin.indexOf(row.getAttribute('data-origin') || 'community') !== -1;
+      var originOk = activeOrigin.length > 0 && activeOrigin.indexOf(row.getAttribute('data-origin') || 'community') !== -1;
       var isVisible = featureOk && langOk && originOk;
       row.classList.toggle('hidden', !isVisible);
       if (isVisible) lastVisible = row;
