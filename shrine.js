@@ -9,7 +9,7 @@ import { parse } from 'https://esm.sh/smol-toml';
   var activeSort = 'default';
   var activeOrigin = ['official', 'community'];
   var maxVisibleStars = 3;
-  var officialLinkWeight = 1000;
+  var officialLinkWeight = 1;
   var endorsementWeight = 10;
   var githubWeight = 5;
 
@@ -140,8 +140,8 @@ import { parse } from 'https://esm.sh/smol-toml';
     });
 
     function linkScore(l) {
-      return (l.origin === 'official' ? officialLinkWeight : 0) +
-        ((l.endorsements || 0) * endorsementWeight) +
+      return ((l.endorsements || 0) * endorsementWeight) +
+        (l.origin === 'official' ? officialLinkWeight : 0) +
         (l.github ? githubWeight : 0);
     }
 

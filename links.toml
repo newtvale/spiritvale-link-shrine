@@ -1,52 +1,58 @@
 [[link]]
-title  = "SpiritVale Discord"
-url    = "https://discord.gg/SpiritVale"
-origin = "official"
+title        = "SpiritVale Discord"
+url          = "https://discord.gg/SpiritVale"
+origin       = "official"
+endorsements = 3
 lang   = ["global"]
 tags   = ["news", "social"]
 desc   = "the official discord server"
 created = "2024-11-24"
 
 [[link]]
-title  = "SpiritVale on Facebook"
-url    = "https://www.facebook.com/SpiritValeGame/"
-origin = "official"
+title        = "SpiritVale on Facebook"
+url          = "https://www.facebook.com/SpiritValeGame/"
+origin       = "official"
+endorsements = 2
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official facebook page"
 created = "2026-05-16"
 
 [[link]]
-title  = "SpiritVale on Reddit"
-url    = "https://www.reddit.com/r/SpiritVale/"
-origin = "official"
+title        = "SpiritVale on Reddit"
+url          = "https://www.reddit.com/r/SpiritVale/"
+origin       = "official"
+endorsements = 3
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official subreddit"
 created = "2025-07-18"
 
 [[link]]
-title  = "SpiritVale on X"
-url    = "https://x.com/SpiritValeGame"
-origin = "official"
+title        = "SpiritVale on X"
+url          = "https://x.com/SpiritValeGame"
+origin       = "official"
+endorsements = 0
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official twitter account"
 created = "2025-12-22"
 
 [[link]]
-title  = "SpiritVale on YouTube"
-url    = "https://www.youtube.com/@spiritvale"
-origin = "official"
+title        = "SpiritVale on YouTube"
+url          = "https://www.youtube.com/@spiritvale"
+origin       = "official"
+endorsements = 2
 lang   = ["en"]
 tags   = ["news", "social"]
 desc   = "the official youtube channel"
 created = "2025-07-18"
 
 [[link]]
-title  = "SpiritVale.info"
-url    = "https://spiritvale.info"
-origin = "official"
+title        = "SpiritVale.info"
+url          = "https://spiritvale.info"
+origin       = "official"
+endorsements = 3
 lang   = ["en"]
 tags   = ["builds", "database", "maps", "market", "news", "wiki"]
 desc   = "officially-endorsed community site"
