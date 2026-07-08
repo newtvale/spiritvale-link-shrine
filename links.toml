@@ -49,6 +49,36 @@ desc   = "the official youtube channel"
 created = "2025-07-18"
 
 [[link]]
+title        = "SpiritVale on Instagram"
+url          = "https://www.instagram.com/spiritvalegame/"
+origin       = "official"
+endorsements = 2
+lang         = ["en"]
+tags         = ["news", "social"]
+desc         = "the official instagram account"
+created = "2025-07-18"
+
+[[link]]
+title        = "SpiritVale on Bluesky"
+url          = "https://bsky.app/profile/spiritvale.bsky.social"
+origin       = "official"
+endorsements = 2
+lang         = ["en"]
+tags         = ["news", "social"]
+desc         = "the official bluesky account"
+created = "2025-07-18"
+
+[[link]]
+title        = "SpiritVale on TikTok"
+url          = "https://www.tiktok.com/@spiritvalegame"
+origin       = "official"
+endorsements = 2
+lang         = ["en"]
+tags         = ["news", "social"]
+desc         = "the official tiktok account"
+created = "2025-07-18"
+
+[[link]]
 title        = "SpiritVale.info"
 url          = "https://spiritvale.info"
 origin       = "official"
