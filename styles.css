@@ -377,6 +377,7 @@ a:focus-visible {
 .badge-simulator   { background: var(--tan-muted);    color: var(--text); }
 .badge-market      { background: var(--orange);       color: var(--white); }
 .badge-news        { background: var(--text-muted);   color: var(--white); }
+.badge-creators    { background: #c00;                 color: var(--white); }
 
 a.badge {
   text-decoration: none;

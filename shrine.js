@@ -73,7 +73,7 @@ import { parse } from 'https://esm.sh/smol-toml';
     });
     li.appendChild(flagSpan);
 
-    if (link.author) {
+    if (link.author && link.author.toLowerCase() !== link.title.toLowerCase()) {
       li.appendChild(el('span', { class: 'link-author' }, 'by ' + link.author));
     }
 

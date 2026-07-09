@@ -247,6 +247,50 @@ created = "2026-05-28"
 added        = "2026-07-05"
 
 [[link]]
+title        = "vasDcrak"
+url          = "https://www.youtube.com/@vasDcrak/"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["creators"]
+desc         = "SpiritVale guides, builds, crafting tips, and MMO gameplay"
+author       = "vasDcrak"
+added        = "2026-07-09"
+
+[[link]]
+title        = "instantgrant"
+url          = "https://www.youtube.com/@instantgrant"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["creators"]
+desc         = "Helpful SpiritVale guides from a longtime MMO/ARPG player"
+author       = "instantgrant"
+added        = "2026-07-09"
+
+[[link]]
+title        = "asiah"
+url          = "https://www.youtube.com/@asiah-s3s"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["creators"]
+desc         = "SpiritVale guides, build tests, weapon tips, and dev interviews"
+author       = "asiah-s3s"
+added        = "2026-07-09"
+
+[[link]]
+title        = "DMCGamingPH"
+url          = "https://www.youtube.com/@DMCGamingPH"
+origin       = "community"
+endorsements = 0
+lang         = ["en"]
+tags         = ["creators"]
+desc         = "SpiritVale class previews, starter guides, and RPG gameplay clips"
+author       = "DMCGamingPH"
+added        = "2026-07-09"
+
+[[link]]
 title        = "Spirit Vale Atlas"
 url          = "https://zeider.github.io/spirit-vale-map/"
 origin       = "community"

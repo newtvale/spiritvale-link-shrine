@@ -37,3 +37,8 @@ nav   = true
 tag   = "wiki"
 label = "Wiki"
 nav   = true
+
+[[filter]]
+tag   = "creators"
+label = "Creators"
+nav   = true
