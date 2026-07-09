@@ -116,10 +116,10 @@ a:focus-visible {
 
 .filter-btn {
   font-family: 'Cinzel', Georgia, serif;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: var(--cyan);
   cursor: pointer;
-  padding: 0.35rem 0.9rem;
+  padding: 0.35rem 0.65rem;
   border: 1px solid rgba(22, 124, 130, 0.55);
   border-radius: 3px;
   background: rgba(22, 124, 130, 0.1);
@@ -370,12 +370,12 @@ a:focus-visible {
 }
 .badge-github      { background: var(--github);       color: var(--white); }
 .badge-social      { background: var(--cyan);         color: var(--text); }
-.badge-wiki        { background: var(--green-forest); color: var(--white); }
-.badge-database    { background: var(--cyan);         color: var(--text); }
+.badge-wikis       { background: var(--green-forest); color: var(--white); }
+.badge-databases   { background: var(--cyan);         color: var(--text); }
 .badge-builds      { background: var(--green-bright); color: var(--text); }
 .badge-maps        { background: var(--teal);         color: var(--white); }
-.badge-simulator   { background: var(--tan-muted);    color: var(--text); }
-.badge-market      { background: var(--orange);       color: var(--white); }
+.badge-simulators  { background: var(--tan-muted);    color: var(--text); }
+.badge-markets     { background: var(--orange);       color: var(--white); }
 .badge-news        { background: var(--text-muted);   color: var(--white); }
 .badge-creators    { background: #c00;                 color: var(--white); }
 

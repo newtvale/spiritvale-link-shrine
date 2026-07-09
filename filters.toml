@@ -4,13 +4,13 @@ label = "Builds"
 nav   = true
 
 [[filter]]
-tag   = "simulator"
-label = "Simulator"
+tag   = "simulators"
+label = "Simulators"
 nav   = true
 
 [[filter]]
-tag   = "database"
-label = "Database"
+tag   = "databases"
+label = "Databases"
 nav   = true
 
 [[filter]]
@@ -19,8 +19,8 @@ label = "Maps"
 nav   = true
 
 [[filter]]
-tag   = "market"
-label = "Market"
+tag   = "markets"
+label = "Markets"
 nav   = true
 
 [[filter]]
@@ -34,8 +34,8 @@ label = "Social"
 nav   = true
 
 [[filter]]
-tag   = "wiki"
-label = "Wiki"
+tag   = "wikis"
+label = "Wikis"
 nav   = true
 
 [[filter]]
