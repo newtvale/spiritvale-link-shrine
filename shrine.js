@@ -176,6 +176,8 @@ import { parse } from 'https://esm.sh/smol-toml';
     });
 
     var langBar = el('div', { class: 'lang-bar' });
+    var langGroup = el('div', { class: 'lang-group' });
+    var originGroup = el('div', { class: 'origin-group' });
 
     if (data.languages && data.languages.length) {
       data.languages.forEach(function (lang) {
@@ -194,9 +196,10 @@ import { parse } from 'https://esm.sh/smol-toml';
           }
           applyFilters();
         });
-        langBar.appendChild(btn);
+        langGroup.appendChild(btn);
       });
 
+      langBar.appendChild(langGroup);
       langBar.appendChild(el('span', { class: 'bar-divider' }));
     }
 
@@ -213,8 +216,10 @@ import { parse } from 'https://esm.sh/smol-toml';
         }
         applyFilters();
       });
-      langBar.appendChild(btn);
+      originGroup.appendChild(btn);
     });
+
+    langBar.appendChild(originGroup);
 
     nav.parentNode.insertBefore(langBar, nav.nextSibling);
 
