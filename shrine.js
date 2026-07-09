@@ -8,10 +8,6 @@ import { parse } from 'https://esm.sh/smol-toml';
   var activeLangs = ['en', 'global'];
   var activeSort = 'default';
   var activeOrigin = ['official', 'community'];
-  var maxVisibleStars = 3;
-  var officialLinkWeight = 1;
-  var endorsementWeight = 10;
-  var githubWeight = 5;
 
   function el(tag, attrs, text) {
     var node = document.createElement(tag);
@@ -60,7 +56,7 @@ import { parse } from 'https://esm.sh/smol-toml';
     }
 
     if (link.endorsements > 0) {
-      var stars = '★'.repeat(Math.min(link.endorsements, maxVisibleStars));
+      var stars = '★'.repeat(Math.min(link.endorsements, 3));
       li.appendChild(el('span', { class: 'link-stars', title: 'Community-endorsed', 'aria-label': stars + ' stars' }, stars));
     }
 
@@ -103,8 +99,7 @@ import { parse } from 'https://esm.sh/smol-toml';
 
     var rows = document.querySelectorAll('.link-row');
     var lastVisible = null;
-    for (var j = 0; j < rows.length; j++) {
-      var row = rows[j];
+    Array.from(rows).forEach(function (row) {
       row.classList.remove('visible-last');
       var tags = row.getAttribute('data-tags') || '';
       var langs = row.getAttribute('data-lang') || '';
@@ -119,7 +114,7 @@ import { parse } from 'https://esm.sh/smol-toml';
       var isVisible = featureOk && langOk && originOk;
       row.classList.toggle('hidden', !isVisible);
       if (isVisible) lastVisible = row;
-    }
+    });
     if (lastVisible) lastVisible.classList.add('visible-last');
 
     var emptyMsg = document.querySelector('.shrine-empty');
@@ -140,9 +135,9 @@ import { parse } from 'https://esm.sh/smol-toml';
     });
 
     function linkScore(l) {
-      return ((l.endorsements || 0) * endorsementWeight) +
-        (l.origin === 'official' ? officialLinkWeight : 0) +
-        (l.github ? githubWeight : 0);
+      return ((l.endorsements || 0) * 10) +
+        (l.origin === 'official' ? 1 : 0) +
+        (l.github ? 5 : 0);
     }
 
     allLinks.sort(function (a, b) {
@@ -227,16 +222,11 @@ import { parse } from 'https://esm.sh/smol-toml';
       if (activeSort === 'alpha') {
         return allLinks.slice().sort(function (a, b) { return a.title.localeCompare(b.title); });
       }
-      if (activeSort === 'newest') {
+      if (activeSort === 'newest' || activeSort === 'oldest') {
+        var dir = activeSort === 'newest' ? -1 : 1;
         return allLinks.slice().sort(function (a, b) {
           var da = a.created || '9999-99-99', db = b.created || '9999-99-99';
-          return da === db ? 0 : da < db ? 1 : -1;
-        });
-      }
-      if (activeSort === 'oldest') {
-        return allLinks.slice().sort(function (a, b) {
-          var da = a.created || '9999-99-99', db = b.created || '9999-99-99';
-          return da === db ? 0 : da > db ? 1 : -1;
+          return da === db ? 0 : da < db ? dir : -dir;
         });
       }
       if (activeSort === 'random') {
