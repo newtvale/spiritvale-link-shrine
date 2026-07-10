@@ -364,17 +364,32 @@ a:focus-visible {
 
 .link-official-mark {
   color: var(--red);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   flex-shrink: 0;
   line-height: 1;
 }
 
-.link-stars {
-  color: var(--orange);
-  font-size: 0.7rem;
+.link-fire {
+  font-size: 0.85rem;
   flex-shrink: 0;
   line-height: 1;
-  letter-spacing: 0.05em;
+}
+
+.link-github-icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: inherit;
+  opacity: 0.75;
+  transition: opacity 0.15s;
+  position: relative;
+  top: -0.1em;
+}
+.link-github-icon:hover { opacity: 1; }
+.link-github-icon svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: currentColor;
 }
 .badge-github      { background: var(--github);       color: var(--white); }
 .badge-social      { background: var(--cyan);         color: var(--text); }
