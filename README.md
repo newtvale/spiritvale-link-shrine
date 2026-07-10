@@ -1,7 +1,7 @@
 # SpiritVale Link Shrine
 
 A fan-made link directory for [SpiritVale](https://spiritvale.info).  
-**Live site:** https://newtvale.github.io/spiritvale-link-shrine
+**Live site:** https://spiritivale-link-shrine.newtvale.net
 
 ## Running locally
 
