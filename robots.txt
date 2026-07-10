@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://newtvale.github.io/spiritvale-link-shrine/sitemap.xml
+Sitemap: https://spiritivale-link-shrine.newtvale.net/sitemap.xml
