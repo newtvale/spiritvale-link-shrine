@@ -303,3 +303,15 @@ author       = "Zeider"
 github       = "https://github.com/Zeider/spirit-vale-map"
 created      = "2026-06-11"
 added        = "2026-07-07"
+
+[[link]]
+title        = "SpiritVale Waiting Room"
+url          = "https://spiritvale-waiting-room.newtvale.net/"
+origin       = "community"
+trending     = false
+lang         = ["en"]
+tags         = ["social"]
+desc         = "Waiting room for next SpiritVale milestone (with stars, music, and screenshots)"
+author       = "newt"
+created      = "2026-07-10"
+added        = "2026-07-10"
