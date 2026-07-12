@@ -89,6 +89,10 @@ import { parse } from 'https://esm.sh/smol-toml';
       li.appendChild(makeGithubIcon(link.github));
     }
 
+    if (link.ads) {
+      li.appendChild(el('span', { class: 'link-ads', title: 'Contains ads', 'aria-label': 'contains ads' }, '🪧'));
+    }
+
     var flagSpan = el('span', { class: 'link-lang' });
     langs.forEach(function (code) {
       var meta = langMeta && langMeta[code];
@@ -163,7 +167,8 @@ import { parse } from 'https://esm.sh/smol-toml';
     function linkScore(l) {
       return (l.trending ? 100 : 0) +
         (l.trending && l.origin === 'official' ? 10 : 0) +
-        (l.github ? 1 : 0);
+        (l.github ? 1 : 0) +
+        (l.ads ? -1 : 0);
     }
 
     var tagOrder = ['wikis', 'databases', 'builds', 'simulators', 'maps', 'market', 'social', 'news', 'creators'];
