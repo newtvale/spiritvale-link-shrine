@@ -315,3 +315,15 @@ desc         = "Waiting room for next SpiritVale milestone (with stars, music, a
 author       = "newt"
 created      = "2026-07-10"
 added        = "2026-07-10"
+
+[[link]]
+title        = "DaOpa's SpiritVale Fansite"
+url          = "https://gamingwithdaopa.ellatha.com/spiritvale/"
+origin       = "community"
+trending     = false
+lang         = ["en"]
+tags         = ["builds", "databases", "simulators"]
+desc         = "game database with a class builder and community build browser"
+author       = "DaOpa"
+created      = "2026-07-08"
+added        = "2026-07-12"
