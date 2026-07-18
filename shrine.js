@@ -81,6 +81,15 @@ import { parse } from 'https://esm.sh/smol-toml';
       li.appendChild(el('span', { class: 'link-official-mark', title: 'Official', 'aria-label': 'Official' }, '✔'));
     }
 
+    var flagSpan = el('span', { class: 'link-lang' });
+    langs.forEach(function (code) {
+      var meta = langMeta && langMeta[code];
+      if (meta && meta.flag) {
+        flagSpan.appendChild(el('span', { class: 'link-lang-flag', title: meta.name || meta.label }, meta.flag));
+      }
+    });
+    li.appendChild(flagSpan);
+
     if (link.trending) {
       li.appendChild(el('span', { class: 'link-fire', title: 'Trending on Discord', 'aria-label': 'trending' }, '🔥'));
     }
@@ -92,15 +101,6 @@ import { parse } from 'https://esm.sh/smol-toml';
     if (link.ads) {
       li.appendChild(el('span', { class: 'link-ads', title: 'Contains ads', 'aria-label': 'contains ads' }, '🪧'));
     }
-
-    var flagSpan = el('span', { class: 'link-lang' });
-    langs.forEach(function (code) {
-      var meta = langMeta && langMeta[code];
-      if (meta && meta.flag) {
-        flagSpan.appendChild(el('span', { class: 'link-lang-flag', title: meta.label }, meta.flag));
-      }
-    });
-    li.appendChild(flagSpan);
 
     if (link.author && link.author.toLowerCase() !== link.title.toLowerCase()) {
       li.appendChild(el('span', { class: 'link-author' }, 'by ' + link.author));
@@ -270,7 +270,8 @@ import { parse } from 'https://esm.sh/smol-toml';
       if (activeSort === 'newest' || activeSort === 'oldest') {
         var dir = activeSort === 'newest' ? 1 : -1;
         return allLinks.slice().sort(function (a, b) {
-          var da = a.created || '9999-99-99', db = b.created || '9999-99-99';
+          var da = a.created || a.added || '', db = b.created || b.added || '';
+          if (!da || !db) return da === db ? 0 : (da ? -1 : 1);
           return da === db ? 0 : da < db ? dir : -dir;
         });
       }

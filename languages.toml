@@ -1,19 +1,23 @@
 [[language]]
 code  = "global"
 label = "Global"
+name  = "Global"
 flag  = "🌐"
 
 [[language]]
 code  = "en"
 label = "EN"
+name  = "English"
 flag  = "🇬🇧"
 
 [[language]]
 code  = "de"
 label = "DE"
+name  = "German"
 flag  = "🇩🇪"
 
 [[language]]
 code  = "th"
 label = "TH"
+name  = "Thai"
 flag  = "🇹🇭"

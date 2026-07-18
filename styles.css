@@ -335,16 +335,16 @@ a:focus-visible {
 .shrine-grid.lang-multi .link-lang {
   display: inline-flex;
   align-items: center;
-  height: 1em;
+  height: 1.2em;
   overflow: hidden;
   vertical-align: middle;
 }
 
 .link-lang-flag {
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1;
   cursor: default;
-  transform: scale(0.75);
+  transform: scale(0.9);
   transform-origin: center;
 }
 
