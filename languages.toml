@@ -12,3 +12,8 @@ flag  = "🇬🇧"
 code  = "de"
 label = "DE"
 flag  = "🇩🇪"
+
+[[language]]
+code  = "th"
+label = "TH"
+flag  = "🇹🇭"

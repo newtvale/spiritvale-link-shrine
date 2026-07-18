@@ -355,3 +355,30 @@ desc         = "game database with a class builder and community build browser"
 author       = "DaOpa"
 created      = "2026-07-08"
 added        = "2026-07-12"
+
+[[link]]
+title        = "SpiritVale Guide"
+url          = "https://spiritvale-guide.netlify.app/"
+origin       = "community"
+trending     = true
+ads          = false
+lang         = ["en", "th"]
+tags         = ["builds", "databases", "maps"]
+desc         = "database of enchants, bosses, artifacts, craftsman shops, and set bonuses"
+author       = "Zodiac"
+created      = "2026-07-14"
+added        = "2026-07-18"
+
+[[link]]
+title        = "SpiritVale Population"
+url          = "https://jmctune.github.io/spiritvale-population/"
+origin       = "community"
+trending     = false
+ads          = false
+lang         = ["global"]
+tags         = ["databases"]
+desc         = "tracks player counts and live server counts per region over time"
+author       = "jmctune"
+github       = "https://github.com/jmctune/spiritvale-population"
+created      = "2026-07-18"
+added        = "2026-07-18"
