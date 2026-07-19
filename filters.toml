@@ -18,27 +18,26 @@ tag   = "maps"
 label = "Maps"
 nav   = true
 
+# nav = false keeps the badge label without adding a nav button;
+# these three are reachable via the "Other" group below.
 [[filter]]
 tag   = "markets"
 label = "Markets"
-nav   = true
+nav   = false
 
 [[filter]]
 tag   = "news"
 label = "News"
-nav   = true
+nav   = false
 
 [[filter]]
 tag   = "social"
 label = "Social"
-nav   = true
+nav   = false
 
+# a group filter: matches a link carrying any of `tags`
 [[filter]]
-tag   = "wikis"
-label = "Wikis"
+tag   = "other"
+label = "Other"
 nav   = true
-
-[[filter]]
-tag   = "creators"
-label = "Creators"
-nav   = true
+tags  = ["markets", "news", "social"]

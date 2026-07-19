@@ -95,14 +95,16 @@ a:focus-visible {
   letter-spacing: 0.02em;
 }
 
-.shrine-header-ornament {
-  display: block;
-  margin: 0.5rem auto 0.4rem;
-  font-size: 0.75rem;
-  color: var(--teal);
-  letter-spacing: 0.55em;
-  text-indent: 0.55em;
-  user-select: none;
+.shrine-elsewhere {
+  font-size: 0.72rem;
+  color: var(--tan-muted);
+  margin-top: 0.35rem;
+  opacity: 0.75;
+  letter-spacing: 0.02em;
+}
+
+.shrine-elsewhere a {
+  color: var(--cyan);
 }
 
 /* nav / filter bar */
@@ -157,8 +159,7 @@ a:focus-visible {
   align-items: center;
 }
 
-.lang-group,
-.origin-group {
+.lang-group {
   display: flex;
   gap: 0.3rem;
   align-items: center;
@@ -184,41 +185,6 @@ a:focus-visible {
 }
 
 .lang-btn.lang-active {
-  opacity: 1;
-  background: rgba(22, 124, 130, 0.15);
-  border-color: var(--teal);
-  color: var(--teal);
-}
-
-.bar-divider {
-  display: inline-block;
-  width: 1px;
-  align-self: stretch;
-  background: rgba(170, 162, 142, 0.3);
-  margin: 0 0.5rem;
-}
-
-/* origin filter buttons (live in .lang-bar) */
-.origin-btn {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 0.42rem;
-  color: var(--tan-muted);
-  cursor: pointer;
-  padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(170, 162, 142, 0.35);
-  border-radius: 3px;
-  background: transparent;
-  opacity: 0.6;
-  transition: opacity 0.15s, background 0.15s, color 0.15s;
-  letter-spacing: 0.05em;
-}
-
-.origin-btn:hover {
-  opacity: 1;
-  color: var(--cyan);
-}
-
-.origin-btn.origin-active {
   opacity: 1;
   background: rgba(22, 124, 130, 0.15);
   border-color: var(--teal);
@@ -362,13 +328,6 @@ a:focus-visible {
   vertical-align: middle;
 }
 
-.link-official-mark {
-  color: var(--red);
-  font-size: 0.85rem;
-  flex-shrink: 0;
-  line-height: 1;
-}
-
 .link-fire {
   font-size: 0.85rem;
   flex-shrink: 0;
@@ -401,14 +360,12 @@ a:focus-visible {
 }
 .badge-github      { background: var(--github);       color: var(--white); }
 .badge-social      { background: var(--cyan);         color: var(--text); }
-.badge-wikis       { background: var(--green-forest); color: var(--white); }
 .badge-databases   { background: var(--cyan);         color: var(--text); }
 .badge-builds      { background: var(--green-bright); color: var(--text); }
 .badge-maps        { background: var(--teal);         color: var(--white); }
 .badge-simulators  { background: var(--tan-muted);    color: var(--text); }
 .badge-markets     { background: var(--orange);       color: var(--white); }
 .badge-news        { background: var(--text-muted);   color: var(--white); }
-.badge-creators    { background: #c00;                 color: var(--white); }
 
 a.badge {
   text-decoration: none;
@@ -519,10 +476,6 @@ main {
   .lang-bar {
     flex-direction: column;
     gap: 0.4rem;
-  }
-
-  .bar-divider {
-    display: none;
   }
 
   .sort-bar {

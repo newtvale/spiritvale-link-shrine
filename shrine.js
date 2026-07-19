@@ -5,9 +5,9 @@ import { parse } from 'https://esm.sh/smol-toml';
   'use strict';
 
   var activeFeature = 'all';
+  var featureMembers = {}; // group tag -> member tags, from filters.toml
   var activeLangs = ['en', 'global'];
   var activeSort = 'default';
-  var activeOrigin = ['official', 'community'];
 
   function el(tag, attrs, text) {
     var node = document.createElement(tag);
@@ -66,8 +66,7 @@ import { parse } from 'https://esm.sh/smol-toml';
     var li = el('li', {
       class: 'link-row',
       'data-tags': tags.join(' '),
-      'data-lang': langs.join(' '),
-      'data-origin': link.origin || 'community'
+      'data-lang': langs.join(' ')
     });
 
     li.appendChild(el('a', {
@@ -76,10 +75,6 @@ import { parse } from 'https://esm.sh/smol-toml';
       target: '_blank',
       rel: 'noopener noreferrer'
     }, link.title));
-
-    if (link.origin === 'official') {
-      li.appendChild(el('span', { class: 'link-official-mark', title: 'Official', 'aria-label': 'Official' }, '✔'));
-    }
 
     var flagSpan = el('span', { class: 'link-lang' });
     langs.forEach(function (code) {
@@ -134,14 +129,14 @@ import { parse } from 'https://esm.sh/smol-toml';
       var tags = row.getAttribute('data-tags') || '';
       var langs = row.getAttribute('data-lang') || '';
 
+      var wanted = featureMembers[activeFeature] || [activeFeature];
       var featureOk = activeFeature === 'all' ||
-        tags.split(' ').indexOf(activeFeature) !== -1;
+        tags.split(' ').some(function (t) { return wanted.indexOf(t) !== -1; });
 
       var langOk = activeLangs.length > 0 &&
         langs.split(' ').some(function (l) { return activeLangs.indexOf(l) !== -1; });
 
-      var originOk = activeOrigin.length > 0 && activeOrigin.indexOf(row.getAttribute('data-origin') || 'community') !== -1;
-      var isVisible = featureOk && langOk && originOk;
+      var isVisible = featureOk && langOk;
       row.classList.toggle('hidden', !isVisible);
       if (isVisible) lastVisible = row;
     });
@@ -166,12 +161,11 @@ import { parse } from 'https://esm.sh/smol-toml';
 
     function linkScore(l) {
       return (l.trending ? 100 : 0) +
-        (l.trending && l.origin === 'official' ? 10 : 0) +
         (l.github ? 1 : 0) +
         (l.ads ? -1 : 0);
     }
 
-    var tagOrder = ['wikis', 'databases', 'builds', 'simulators', 'maps', 'market', 'social', 'news', 'creators'];
+    var tagOrder = ['databases', 'builds', 'simulators', 'maps', 'markets', 'social', 'news'];
     function primaryTagRank(l) {
       if (!l.tags) return tagOrder.length;
       var best = tagOrder.length;
@@ -191,7 +185,10 @@ import { parse } from 'https://esm.sh/smol-toml';
     });
 
     var tagLabels = {};
-    (data.filters || []).forEach(function (f) { tagLabels[f.tag] = f.label; });
+    (data.filters || []).forEach(function (f) {
+      tagLabels[f.tag] = f.label;
+      if (f.tags) featureMembers[f.tag] = f.tags;
+    });
 
     var langMeta = {};
     (data.languages || []).forEach(function (l) { langMeta[l.code] = l; });
@@ -217,7 +214,6 @@ import { parse } from 'https://esm.sh/smol-toml';
 
     var langBar = el('div', { class: 'lang-bar' });
     var langGroup = el('div', { class: 'lang-group' });
-    var originGroup = el('div', { class: 'origin-group' });
 
     if (data.languages && data.languages.length) {
       data.languages.forEach(function (lang) {
@@ -240,26 +236,7 @@ import { parse } from 'https://esm.sh/smol-toml';
       });
 
       langBar.appendChild(langGroup);
-      langBar.appendChild(el('span', { class: 'bar-divider' }));
     }
-
-    [['official', 'Official'], ['community', 'Community']].forEach(function (opt) {
-      var btn = el('button', { class: 'origin-btn origin-active', 'data-origin': opt[0] }, opt[1]);
-      btn.addEventListener('click', function () {
-        var idx = activeOrigin.indexOf(opt[0]);
-        if (idx === -1) {
-          activeOrigin.push(opt[0]);
-          btn.classList.add('origin-active');
-        } else {
-          activeOrigin.splice(idx, 1);
-          btn.classList.remove('origin-active');
-        }
-        applyFilters();
-      });
-      originGroup.appendChild(btn);
-    });
-
-    langBar.appendChild(originGroup);
 
     nav.parentNode.insertBefore(langBar, nav.nextSibling);
 
